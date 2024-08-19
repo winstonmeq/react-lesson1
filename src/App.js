@@ -8,6 +8,8 @@ function App() {
       <div className="card">
       <h2>Title</h2>
       <div className="actions">
+      <button className="btn">Add</button>
+
         <button className="btn">Delete</button>
       </div>
      
