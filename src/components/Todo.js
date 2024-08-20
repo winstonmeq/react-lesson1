@@ -1,12 +1,19 @@
 
 
-function Todo() {
+function Todo(props) {
 
+
+    function buttonClick() {
+        console.log('click me')
+        console.log(props.text)
+      }
+
+      
     return (
         <div className="card">
-        <h2>Title</h2>
+        <h2>{props.text}</h2>
         <div className="actions">
-          <button className="btn">Delete</button>
+          <button className="btn" onClick={buttonClick}>Delete</button>
         </div>
       </div>
     )
